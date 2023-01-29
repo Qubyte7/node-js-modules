@@ -3,6 +3,7 @@ const os=require('os');
 const fs=require('fs');
 
 
+
  
 let  body = path.normalize('./node.js///path/..');//normailze :normalizes the path by removing duplicates 0f double slashes and dotss
 console.log(body);//this /.. means one directory up
@@ -96,6 +97,9 @@ fs.writeFile('./written.txt','Beni sunt et Terra',(err)=>{
 }
 //fs.unlink is used to delete file 
 //and fs.write is used to write a file  
+
+
+//query strings
 
 
 
