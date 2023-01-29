@@ -74,6 +74,8 @@ fs.readFile('./file.txt','utf-8',(err,data)=>{
     }
 })
 
+if(!fs.existsSync('./written.txt')){
+
 fs.writeFile('./written.txt','Beni sunt et Terra',(err)=>{
     if(err){
         console.log(err)
@@ -81,8 +83,19 @@ fs.writeFile('./written.txt','Beni sunt et Terra',(err)=>{
     else{
         console.log('file written');
     }
-})
-
+});
+}else{
+    fs.unlink('./written.txt',(err)=>{
+        if(err){
+            console.log(err);
+        }
+        else{
+            console.log('file deleted');
+        }
+    })
+}
+//fs.unlink is used to delete file 
+//and fs.write is used to write a file  
 
 
 
