@@ -1,17 +1,18 @@
 {
-  "name": "node-",
+  "name": "exp-module",
   "version": "1.0.1",
   "description": "",
   "main": "path.js",
   "scripts": {
     "start": "node path",
     "dev": "nodemon path",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "keyword":"calc"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "date-fns": "^2.29.3",
+    "exp-module": "^2.29.3",
     "express": "^4.18.2",
     "nodemon": "^2.0.20",
     "uuid": "^9.0.0"
