@@ -1,7 +1,8 @@
 const path = require('path');
 const os=require('os');
 const fs=require('fs');
-
+const EventEmmitter=require('events');//here note that the name is started by capital letter
+                                //this show us the the EventEmmitter is a class
 
 
  
@@ -99,15 +100,23 @@ fs.writeFile('./written.txt','Beni sunt et Terra',(err)=>{
 //and fs.write is used to write a file  
 
 
-//query strings
+//events
+//on the top you've seen that we imported the event then next we must create event emitter class
+
+//1.event definition
+
+var emmiter=new EventEmmitter();//here you see that emmitter is an object
+
+//lets register a listener that would called when the event is called
+
+emmiter.on('Mugisha',()=>{
+console.log('our event is running');
+});
+//raise an event
+emmiter.emit('Mugisha');//Mugisha is the name of our event
 
 
-
-
-
-
-
-
+//.emit :signals that an event had happened
 
 
 
