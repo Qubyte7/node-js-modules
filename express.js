@@ -15,7 +15,7 @@ exp.get('/mandazi',(req,res)=>{
 })
 
 exp.listen(3300,()=>{
-    console.log('mandazi arashushye Running');
+    console.log('mandazi arashushye aragurwa...');
 });
 
 

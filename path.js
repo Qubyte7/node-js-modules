@@ -118,12 +118,13 @@ emmiter.emit('Mugisha');//Mugisha is the name of our event
 
 //.emit :signals that an event had happened
 
+var imbusha=new EventEmmitter();
 
+imbusha.on('ibiraha',()=>{
+    console.log('capati zirashyushye gusa abana barakonje');
+})
 
-
-
-
-
+imbusha.emit('ibiraha');
 
 
 
