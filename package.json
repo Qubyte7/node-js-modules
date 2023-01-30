@@ -5,7 +5,7 @@
   "main": "path.js",
   "scripts": {
     "start": "node path",
-    "dev":"nodemon path",
+    "dev": "nodemon path",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
